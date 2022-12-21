@@ -15,13 +15,13 @@ label
 1         2242
 ```
 
-<img src="http://rmaux11hx.hn-bkt.clouddn.com/img/image-20221109173044528.png" alt="image-20221109173044528" style="zoom:30%;" />
+<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-202012.png" alt="image-20221109173044528" style="zoom:30%;" />
 
 可以看出数据的类别极不均衡，需要在数据预处理阶段进行改进。
 
 ### 2. 统计句长
 
-<img src="http://rmaux11hx.hn-bkt.clouddn.com/img/image-20221109173302956.png" alt="image-20221109173302956" style="zoom:30%;" />
+<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-202014.png" alt="image-20221109173302956" style="zoom:30%;" />
 
 可以看出tweet的长度大多集中在40以下，后面将数据裁剪成40个token。
 
@@ -99,9 +99,9 @@ NewsClassifier(
 
 ### 2、模型训练
 
-<img src="http://rmaux11hx.hn-bkt.clouddn.com/img/image-20221110110312868.png" alt="image-20221110110312868" style="zoom:30%;" />
+<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-202019.png" alt="image-20221110110312868" style="zoom:30%;" />
 
-<img src="http://rmaux11hx.hn-bkt.clouddn.com/img/image-20221110110251414.png" alt="image-20221110110251414" style="zoom:30%;" />
+<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-202020.png" alt="image-20221110110251414" style="zoom:30%;" />
 
 ``` python
 test_acc 0.9668542839274546
@@ -117,9 +117,9 @@ weighted avg       0.96      0.97      0.97      1599
 
 #### 加入AEDA后
 
-<img src="http://rmaux11hx.hn-bkt.clouddn.com/img/image-20221110155546822.png" alt="image-20221110155546822" style="zoom:30%;" />
+<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-202022.png" alt="image-20221110155546822" style="zoom:30%;" />
 
-<img src="http://rmaux11hx.hn-bkt.clouddn.com/img/image-20221110155601479.png" alt="image-20221110155601479" style="zoom:30%;" />
+<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-202025.png" alt="image-20221110155601479" style="zoom:30%;" />
 
 ``` python
 test_acc 0.9965592743196747
@@ -137,9 +137,9 @@ weighted avg       1.00      1.00      1.00      3197
 
 #### 数据下采样+AEDA
 
-<img src="http://rmaux11hx.hn-bkt.clouddn.com/img/image-20221110203409395.png" alt="image-20221110203409395" style="zoom:30%;" />
+<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-202026.png" alt="image-20221110203409395" style="zoom:30%;" />
 
-<img src="http://rmaux11hx.hn-bkt.clouddn.com/img/image-20221110203425876.png" alt="image-20221110203425876" style="zoom:30%;" />
+<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-202028.png" alt="image-20221110203425876" style="zoom:30%;" />
 
 ``` python
 Epoch 10/10

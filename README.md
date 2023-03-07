@@ -12,13 +12,13 @@ label
 1         2242
 ```
 
-<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-202012.png" alt="image-20221109173044528" style="zoom:30%;" />
+<img src="https://lxlpicbed.oss-cn-beijing.aliyuncs.com/img/2023-03-07-121534.png" alt="image-20230307121533708" style="zoom:33%;" />
 
 可以看出数据的类别极不均衡，需要在数据预处理阶段进行改进。
 
 ### 2. 统计句长
 
-<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-202014.png" alt="image-20221109173302956" style="zoom:30%;" />
+<img src="https://lxlpicbed.oss-cn-beijing.aliyuncs.com/img/2023-03-07-121518.png" alt="image-20230307121517649" style="zoom:33%;" />
 
 可以看出tweet的长度大多集中在40以下，后面将数据裁剪成40个token。
 
@@ -96,9 +96,9 @@ NewsClassifier(
 
 ### 2、模型训练
 
-<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-202019.png" alt="image-20221110110312868" style="zoom:30%;" />
+<img src="https://lxlpicbed.oss-cn-beijing.aliyuncs.com/img/2023-03-07-121556.png" alt="image-20230307121555172" style="zoom:33%;" />
 
-<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-202020.png" alt="image-20221110110251414" style="zoom:30%;" />
+<img src="https://lxlpicbed.oss-cn-beijing.aliyuncs.com/img/2023-03-07-121612.png" alt="image-20230307121611169" style="zoom:33%;" />
 
 ``` python
 test_acc 0.9668542839274546
@@ -114,9 +114,9 @@ weighted avg       0.96      0.97      0.97      1599
 
 #### 加入AEDA后
 
-<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-202022.png" alt="image-20221110155546822" style="zoom:30%;" />
+<img src="https://lxlpicbed.oss-cn-beijing.aliyuncs.com/img/2023-03-07-121633.png" alt="image-20230307121632115" style="zoom:33%;" />
 
-<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-202025.png" alt="image-20221110155601479" style="zoom:30%;" />
+<img src="https://lxlpicbed.oss-cn-beijing.aliyuncs.com/img/2023-03-07-121829.png" alt="image-20230307121828639" style="zoom:33%;" />
 
 ``` python
 test_acc 0.9965592743196747
@@ -134,9 +134,9 @@ weighted avg       1.00      1.00      1.00      3197
 
 #### 数据下采样+AEDA
 
-<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-202026.png" alt="image-20221110203409395" style="zoom:30%;" />
+<img src="https://lxlpicbed.oss-cn-beijing.aliyuncs.com/img/2023-03-07-121706.png" alt="image-20230307121705023" style="zoom:33%;" />
 
-<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-202028.png" alt="image-20221110203425876" style="zoom:30%;" />
+<img src="https://lxlpicbed.oss-cn-beijing.aliyuncs.com/img/2023-03-07-121721.png" alt="image-20230307121720784" style="zoom:33%;" />
 
 ``` python
 Epoch 10/10
